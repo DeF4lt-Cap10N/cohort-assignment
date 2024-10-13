@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        .container {
+            display: grid;
+            gap: 5px;
+            background-color: aqua;
+        }
+
+        .left {
+            display: grid;
+            background-color: red;
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .left-child {
+            display: grid;
+            gap: 5px;
+            word-spacing: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            text-align: left;
+        }
+
+        .right {
+            display: grid;
+            grid-column: 2;
+            grid-row: 1;
+            background-color: blue;
+            font-size: larger;
+            font-weight: bolder;
+            gap: 10px;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+        }
+
+         .col-1 {
+            display: grid;
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .col-1 div {
+            gap: 5px;
+        }
+
+        .col-2 {
+            display: grid;
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        .co2-1 div {
+            gap: 5px;
+        }
+
+        .col-3 {
+            display: grid;
+            grid-row: 1;
+            grid-column: 3;
+        }
+
+        .col-3 div {
+            gap: 5px;
+        } 
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                left
+            </div>
+            <div class="left-child">
+                <h4>text text tex text text text text text  text text text text text </h4>
+            </div>
+        </div>
+        <div class="right">
+            <div class="col-1">
+                <div>col1</div>
+                <div>col1</div>
+                <div>col1</div>
+            </div>
+            <div class="col-2">
+                <div>col2</div>
+                <div>col2</div>
+                <div>col2</div>
+            </div>
+            <div class="col-3">
+                <div>col3</div>
+                <div>col3</div>
+                <div>col3</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

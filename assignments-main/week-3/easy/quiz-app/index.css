@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(219, 150, 150), rgb(100, 100, 213));
+}
+
+.app{
+    background:#fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1{
+    font-weight: 25px;
+    color: lightpink;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color:rgb(138, 138, 223);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn-1{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-1:hover:not([disabled]){  
+    background-color: #222;
+    color: #fff;
+}
+
+.btn-1:disabled{
+    cursor: no-drop;
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgb(219, 150, 150), rgb(100, 100, 213));
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display:none;
+}
+
+.correct{
+background-color:lightgreen;
+}
+
+.inCorrect{
+background-color:lightcoral;
+}
