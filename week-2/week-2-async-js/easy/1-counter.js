@@ -1,9 +1,8 @@
-let cnt =0;
+let cnt = 0;
 
-function counter(){
-    cnt+=1;
+function print(){
+    cnt++;
     console.log(cnt);
 }
 
-
-setInterval(counter, 1000);
+setInterval(print, 1000);

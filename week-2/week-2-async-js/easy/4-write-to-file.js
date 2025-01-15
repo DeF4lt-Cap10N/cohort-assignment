@@ -1,13 +1,16 @@
 // const fs = require("fs/promises");
 const fs = require("fs");
 
-const content = "rahul is default";
+const content = "what we know is drom what we don't know is ocean";
 
-fs.writeFile(__dirname+"/3-a.txt" , content, err => {
+let print = (err, data) => {
     if(err){
-        console.log(err);
+        console.log("invalid");
     }
     else{
-        console.log("file written successfully");
+        console.log("done!");
     }
-})
+}
+
+fs.writeFile(__dirname+"/3-a.txt", content, print);
+

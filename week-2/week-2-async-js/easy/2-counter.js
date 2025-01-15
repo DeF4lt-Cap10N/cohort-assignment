@@ -1,9 +1,9 @@
 let cnt = 0;
 
-function counter(){
-    cnt+=1;
+function print(){
+    cnt++;
     console.log(cnt);
-    setTimeout(counter, 1000);
+    setTimeout(print, 1000);
 }
 
-counter();
+print();
